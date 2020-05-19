@@ -11,6 +11,7 @@ export class ApiService {
   private apiUrl: string;
   constructor(private http: HttpClient, private authService: AuthService) {
     this.apiUrl = `http://${environment.apiUrl}/v1`;
+    console.log("ApiService -> constructor -> this.apiUrl", this.apiUrl);
   }
 
   public login(email: string, password: string) {

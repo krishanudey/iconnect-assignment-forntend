@@ -1,3 +1,23 @@
-<p>
-  login works!
-</p>
+<div class="wrapper">
+  <div class="control">
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Email" [(ngModel)]="email" />
+  </div>
+  <div class="control">
+    <label for="email">Password:</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      [(ngModel)]="password"
+    />
+  </div>
+  <div class="action">
+    <button class="btn-login" (click)="login()">Login</button>
+  </div>
+  <div class="action">
+    <a [routerLink]="['/', 'register']" class="link-signup"
+      >Don't have an account?<br />Create</a
+    >
+  </div>
+</div>
