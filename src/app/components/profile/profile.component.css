@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25em;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f4068;
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 0.5em;
+  width: 300px;
+}
+.wrapper > * {
+  margin-top: 1em;
+}
+.wrapper > *:first-child {
+  margin-top: 0;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 1px solid #ccc;
+  padding: 0.25em;
+  font-size: 1em;
+}
+label {
+  font-size: 0.9em;
+  padding: 0.25em 0;
+}
+.action {
+  text-align: center;
+}
+.btn-signup {
+  font-size: 1em;
+  padding: 0.25em;
+  width: 100%;
+  background-color: #e43f5a;
+  color: #ffffff;
+}
+.link-logout {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -1,3 +1,13 @@
-<p>
-  profile works!
-</p>
+<div class="wrapper">
+  <div class="control">
+    <label for="name">Name:</label>
+    <span>{{ currentUser.name }}</span>
+  </div>
+  <div class="control">
+    <label for="email">Email:</label>
+    <span>{{ currentUser.email }}</span>
+  </div>
+  <div class="action">
+    <a (click)="logout()" class="link-logout">Logout</a>
+  </div>
+</div>

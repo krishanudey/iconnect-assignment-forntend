@@ -37,4 +37,9 @@ export class ApiService {
         })
       );
   }
+
+  public logout() {
+    this.authService.updateToken(null);
+    this.authService.updateUser(null);
+  }
 }
