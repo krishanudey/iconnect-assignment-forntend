@@ -1,3 +1,27 @@
-<p>
-  register works!
-</p>
+<div class="wrapper">
+  <div class="control">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="Name" [(ngModel)]="name" />
+  </div>
+  <div class="control">
+    <label for="email">Email:</label>
+    <input type="email" name="email" placeholder="Email" [(ngModel)]="email" />
+  </div>
+  <div class="control">
+    <label for="email">Password:</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      [(ngModel)]="password"
+    />
+  </div>
+  <div class="action">
+    <button class="btn-signup" (click)="register()">Sign Up</button>
+  </div>
+  <div class="action">
+    <a [routerLink]="['/', 'login']" class="link-login"
+      >Already have an account?<br />Login</a
+    >
+  </div>
+</div>
